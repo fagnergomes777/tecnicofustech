@@ -5,30 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício</title>
     <link rel="stylesheet" href="aulas/style/exercicio2.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .title {
+            background-color: green;
+            color: white;
+            font-size: 24px;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .section {
+            margin: 5px;
+            width: 50%;
+            padding: 10px;
+        }
+        .section-header {
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+        }
+        .section-content {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .sec1 { background-color: #2a9d8f; }
+        .sec2 { background-color: #d97706; }
+        .sec3 { background-color: #d32f2f; }
+    </style>
 </head>
 <body>
-
-    <p class="container">
-        <p class="title">Exercício</p>
-
-        <p class="section">
-            <p class="section-title blue">Seção 01</p>
-            <p class="section-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo magni quasi?
-            </p>
-        </p>
-
-        <p class="section">
-            <p class="section-title orange">Seção 02</p>
-            <p class="section-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo magni quasi?
-            </p>
-        </p>
-
-        <p class="section">
-            <p class="section-title red">Seção 03</p>
-        </p>
-    </p>
-
+    <div class="title">Exercício</div>
+    
+    <div class="section">
+        <div class="section-header sec1">Seção 01</div>
+        <div class="section-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magni quasi...</div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header sec2">Seção 02</div>
+        <div class="section-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magni quasi...</div>
+    </div>
+    
+    <div class="section">
+        <div class="section-header sec3">Seção 03</div>
+        <div class="section-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo magni quasi...</div>
+    </div>
 </body>
 </html>
