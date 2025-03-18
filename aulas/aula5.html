@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05 - Display</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        ul  {
+            
+            list-style-type: none;
+            padding: 10px;
+            text-align: right;
+            background-color: #2b2b2b;
+        }
+
+        li  {
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        a   {
+            background-color: #2b2b2b;
+            padding: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #ffbf00;
+            border-radius: 10px;
+            font-size: 2em;
+        }
+
+        a:hover{
+            background-color: #ffbf00;
+            color: #151515;
+            transition: 0.2s;
+            outline: 2px solid #2b2b2b;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">About</a></li>
+        <li> <a href="#">Settings</a></li>
+        <li> <a href="#">Help</a></li>
+    </ul>
+</body>
+</html>
