@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container{
+            background-color: #91eb4c;
+            height: 450px;
+
+            display: flex;
+
+            /* justify-content: start, center, end; */
+
+            /* justify-content: space-around; */
+
+            justify-content: space-between;
+
+            /* justify-content: space-evenly; */
+
+            /* justify-content: start; */
+
+            /* align-items: start; */
+
+            align-items: center;
+
+            /* align-items: end; */
+
+            /* align-items: baseline; */
+
+            /* flex-direction: row; */
+
+            /* flex-direction: column; */
+
+            /* flex-direction: row-reverse; */
+
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */
+
+            /* flex-wrap: nowrap; */
+
+            /* flex-wrap: wrap-reverse; */
+
+            /* order: 0; */
+
+            /* flex-wrap: wrap; */
+
+            /* flex-grow: 0; */
+
+            flex-basis: 0;
+
+
+        }
+
+        .item{
+            background-color: white;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .item1{
+            /* order: -1; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            flex-basis: 1;
+        }
+
+        .item2{
+            /* order: 1;
+            flex-grow: 2; */
+            /* flex-shrink: 3; */
+            flex-basis: 2;
+        }
+
+        /* .item3{
+            order: 2;
+        } */
+
+        /* .item4{
+            order: 2;
+            flex-shrink: 2;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>
+        Flexbox
+    </h1>
+
+    <div class="container">
+        
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item item3">03</div>
+        <div class="item item4">04</div>
+    </div>
+    
+</body>
+</html>
