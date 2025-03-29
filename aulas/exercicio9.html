@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop Meu Amigo Bicho</title>
+
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        p {
+            text-align: left;
+        }
+        .container {
+            width: 60%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .menu button {
+            padding: 10px;
+            border: 3px solid #444;
+            background: #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .menu button:hover {
+            background: #bbb;
+            border-color: #222;
+        }
+        h1 {
+            color: #a36926;
+            text-shadow: -2px -2px 0 #444, 2px -2px 0 #444, -2px 2px 0 #444, 2px 2px 0 #444;
+
+        }
+        .content {
+            text-align: left;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background: #f4f4f4;
+            position: relative;
+            border-right: 4px solid #888;
+            border-bottom: 4px solid #888;
+        }
+        .content h2 {
+            border-bottom: 3px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .content p {
+            padding: 10px;
+        }
+        .footer {
+            margin-top: 20px;
+            background: #666;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="menu">
+            <button>HOME</button>
+            <button>PERFIL</button>
+            <button>CURIOSIDADES</button>
+            <button>PRODUTOS</button>
+            <button>FALA BICHO</button>
+        </div>
+        <h1>Seja Bem-Vindo!</h1>
+        <p><strong>É um prazer tê-lo conosco!</strong></p>
+        <div class="content">
+            <h2>Petshop Meu Amigo Bicho</h2>
+            <p>Aqui na nossa loja, temos produtos maravilhosos, <strong>o melhor atendimento</strong> especialmente para você e seu <strong>amigo bicho</strong>.</p>
+        </div>
+        <div class="footer">
+            Desenvolvido por <strong>Bicho Amigo</strong> 🐾
+        </div>
+    </div>
+</body>
+</html>
