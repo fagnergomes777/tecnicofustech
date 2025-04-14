@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #2e2e2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #444;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: #cbe300;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px black;
+        }
+        label {
+            color: #cbe300;
+            display: block;
+            margin-bottom: 5px;
+
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: black;
+            color: white;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .cancel {
+            background-color: #e74c3c;
+            border: none;
+            color: #ffffff;
+            padding: 10px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .submit {
+            background-color: #cbe300;
+            border: none;
+            color: black;
+            padding: 10px 60px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cancel:hover {
+            background-color: #c0392b;
+        }
+        .submit:hover {
+            background-color: #b2c700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="buttons">
+                <a href="http://127.0.0.1:5500/aulas/exercicio011.html" class="cancel">Cancel</a>
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

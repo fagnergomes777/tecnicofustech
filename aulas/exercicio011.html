@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Seu Plano - MyServer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            text-align: left;
+            padding-left: 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .planos-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 960px;
+        }
+
+        .plano {
+            background-color: #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex; /* Adicionado para alinhar verticalmente os elementos internos */
+            flex-direction: column; /* Organiza os elementos internos em coluna */
+        }
+
+        .plano h2 {
+            margin-top: 0;
+            color: #333;
+            margin-bottom: 10px; /* Adicionado margem abaixo do título */
+        }
+
+        .preco {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .preco span {
+            font-size: 0.6em;
+            font-weight: normal;
+        }
+
+        .detalhes {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+            text-align: left;
+            flex-grow: 1; /* Permite que os detalhes ocupem o espaço restante */
+        }
+
+        .detalhes li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .assinar-btn {
+            background-color: #ffc107;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .assinar-btn:hover {
+            background-color: #e0a800;
+        }
+
+        @media (max-width: 768px) {
+            .planos-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .plano {
+                width: 90%;
+                max-width: 400px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            nav li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MYSERVER</div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/aulas/exercicio11.html">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/aulas/exercicio11.html">Planos</a></li>
+                <li><a href="http://127.0.0.1:5500/aulas/exercicio11.html">Suporte</a></li>
+                <li><a href="http://127.0.0.1:5500/aulas/exercicio11.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="text-align: center; margin-top: 30px;">
+        <h1>ESCOLHA SEU PLANO</h1>
+    </section>
+
+    <section class="planos-container">
+        <div class="plano">
+            <h2>ESSENCIAL</h2>
+            <div class="preco">R$ 3.95<span style="font-size: 0.5em;">/mês</span></div>
+            <ul class="detalhes">
+                <li>1 Website</li>
+                <li>1GB de Armazenamento</li>
+                <li>10GB de Transferência</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/aulas/exercicio11.html" class="assinar-btn">ASSINE JÁ</a>
+        </div>
+
+        <div class="plano">
+            <h2>PREMIUM</h2>
+            <div class="preco">R$ 7.95<span style="font-size: 0.5em;">/mês</span></div>
+            <ul class="detalhes">
+                <li>5 Websites</li>
+                <li>3GB de Armazenamento</li>
+                <li>Transferência Ilimitada</li>
+                <li>10h de Suporte Mensal</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/aulas/exercicio11.html" class="assinar-btn">ASSINE JÁ</a>
+        </div>
+
+        <div class="plano">
+            <h2>GOLD</h2>
+            <div class="preco">R$ 13.95<span style="font-size: 0.5em;">/mês</span></div>
+            <ul class="detalhes">
+                <li>10 Websites</li>
+                <li>30GB de Armazenamento</li>
+                <li>Transferência Ilimitada</li>
+                <li>30h de Suporte Mensal</li>
+                <li>Email Personalizado</li>
+            </ul>
+            <a href="http://127.0.0.1:5500/aulas/exercicio11.html" class="assinar-btn">ASSINE JÁ</a>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+    </script>
+</body>
+</html>
