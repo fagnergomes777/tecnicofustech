@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <style>
+        /* Estilos CSS básicos para visualização. Em um projeto real, estariam em um arquivo CSS separado. */
+        .cadastro-section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Largura aproximada do formulário */
+            margin: 20px auto; /* Centralizar o formulário na página (para visualização isolada) */
+        }
+    
+        .cadastro-section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    
+        .form-group {
+            margin-bottom: 15px;
+        }
+    
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+    
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    
+        .form-group label a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    
+        .form-group label a:hover {
+            text-decoration: underline;
+        }
+    
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            width: 100%;
+        }
+    
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    
+        .error-message {
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+    </style>
+    
+    <script>
+        // Este é um exemplo básico de JavaScript para mostrar a mensagem de erro.
+        // A validação completa do formulário seria mais complexa.
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            const cadastroForm = document.getElementById('cadastroForm');
+    
+            cadastroForm.addEventListener('submit', function(event) {
+                if (!emailInput.value.trim()) {
+                    event.preventDefault(); // Impede o envio do formulário
+                    emailError.style.display = 'block';
+                } else {
+                    emailError.style.display = 'none';
+                    // Aqui você adicionaria a lógica para enviar o formulário
+                    alert('Formulário enviado (simulação)');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="cadastro-section">
+        <h2>Cadastro de Usuário</h2>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nomeCompleto">Nome completo</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                <p class="error-message" id="emailError" style="color: red; display: none;">Preencha este campo</p>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Sua senha">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="termos" name="termos">
+                <label for="termos">Aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>

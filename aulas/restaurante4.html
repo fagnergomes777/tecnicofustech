@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <style>
+        /* Estilos CSS básicos para visualização. Em um projeto real, estariam em um arquivo CSS separado. */
+        .desserts-section {
+            padding: 20px;
+        }
+    
+        .desserts-section h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    
+        .desserts-grid {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo com no mínimo 250px por item */
+            gap: 20px;
+        }
+    
+        .dessert-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    
+        .dessert-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+    
+        .dessert-card h3 {
+            margin: 10px 15px 5px;
+            color: #333;
+            font-size: 1.2em;
+        }
+    
+        .dessert-card .description {
+            margin: 0 15px 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    
+        .dessert-card .price {
+            margin: 10px 15px;
+            color: #e44d26; /* Cor de destaque para o preço */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="desserts-section">
+        <h2>Sobremesas</h2>
+        <ul class="desserts-grid">
+            <li class="dessert-card">
+                <img src="../aulas/img/Cheesecake de morango.jpg" alt="Cheesecake de Morango">
+                <h3>Cheesecake de Morango</h3>
+                <p class="description">Com cobertura de geleia artesanal.</p>
+                <p class="price">R$ 19,00</p>
+            </li>
+            <li class="dessert-card">
+                <img src="../aulas/img/Sorvete de baunilha.jpg" alt="Sorvete de Baunilha">
+                <h3>Sorvete de Baunilha</h3>
+                <p class="description">Acompanhado de calda quente de chocolate.</p>
+                <p class="price">R$ 15,00</p>
+            </li>
+            <li class="dessert-card">
+                <img src="../aulas/img/Brownie com sorvete.jpg" alt="Brownie com Sorvete">
+                <h3>Brownie com Sorvete</h3>
+                <p class="description">Brownie quente com bola de sorvete.</p>
+                <p class="price">R$ 22,00</p>
+            </li>
+            <li class="dessert-card">
+                <img src="../aulas/img/Pudim de leite.jpg" alt="Pudim de Leite">
+                <h3>Pudim de Leite</h3>
+                <p class="description">Clássico pudim brasileiro com calda.</p>
+                <p class="price">R$ 14,00</p>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

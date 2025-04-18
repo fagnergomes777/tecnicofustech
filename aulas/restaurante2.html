@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <style>
+        /* Estilos CSS básicos para visualização. Em um projeto real, estariam em um arquivo CSS separado. */
+        .main-dishes {
+            padding: 20px;
+        }
+    
+        .main-dishes h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    
+        .dishes-grid {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo com no mínimo 250px por item */
+            gap: 20px;
+        }
+    
+        .dish-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+    
+        .dish-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+    
+        .dish-card h3 {
+            margin: 10px 15px 5px;
+            color: #333;
+            font-size: 1.2em;
+        }
+    
+        .dish-card .description {
+            margin: 0 15px 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    
+        .dish-card .price {
+            margin: 10px 15px;
+            color: #e44d26; /* Cor de destaque para o preço */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-dishes">
+        <h2>Pratos Principais</h2>
+        <ul class="dishes-grid">
+            <li class="dish-card">
+                <img src="../aulas/img/Penne.jpg" alt="Penny">
+                <h3>Penny</h3>
+                <p class="description">Penny ao molho Bolonhesa</p>
+                <p class="price">R$ 45,00</p>
+            </li>
+            <li class="dish-card">
+                <img src="../aulas/img/Espetinho.jpg" alt="Espetinho especial">
+                <h3>Espetinho especial</h3>
+                <p class="description">Espetinho de contra-filé, temperado com especiarias.</p>
+                <p class="price">R$ 38,00</p>
+            </li>
+            <li class="dish-card">
+                <img src="../aulas/img/Lasanha.jpg" alt="Lasanha à Bolonhesa">
+                <h3>Lasanha à Bolonhesa</h3>
+                <p class="description">Tradicional receita italiana com carne e queijo.</p>
+                <p class="price">R$ 40,00</p>
+            </li>
+            <li class="dish-card">
+                <img src="../aulas/img/Salada.jpg" alt="Salada fria">
+                <h3>Salada fria</h3>
+                <p class="description">Salada fria com torradas.</p>
+                <p class="price">R$ 42,00</p>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
